@@ -1,5 +1,6 @@
 package com.devsuperior.dsvendas;
 
+import com.devsuperior.dsvendas.entities.Seller;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
