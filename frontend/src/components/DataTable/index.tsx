@@ -46,7 +46,7 @@ const DataTable = () => {
                         {page.content?.map(item => (
                             <tr key={item.id}>
                                 <th>{formatLocalDate(item.date, "dd/MM/yyyy")}</th>
-                                <th>vendedor</th>
+                                <th>{item.seller.name}</th>
                                 <th>{item.visited}</th>
                                 <th>{item.deals}</th>
                                 <th>{item.amount.toFixed(2)}</th>
