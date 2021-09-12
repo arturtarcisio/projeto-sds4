@@ -20,7 +20,7 @@ public class SaleDTO implements Serializable {
     private Integer deals;
     private Double amount;
     private LocalDate date;
-    private SellerDTO sellerDTO;
+    private SellerDTO seller;
 
     public SaleDTO(Sale sale) {
         id = sale.getId();
@@ -28,6 +28,6 @@ public class SaleDTO implements Serializable {
         deals = sale.getDeals();
         amount = sale.getAmount();
         date = sale.getDate();
-        sellerDTO = new SellerDTO(sale.getSeller());
+        seller = new SellerDTO(sale.getSeller());
     }
 }
